@@ -16,6 +16,14 @@ setup(
     },
     include_package_data=True,
     zip_safe=False,
+    scripts=[
+        'django_datatable_demo/manage.py'
+    ],
+    entry_points={
+        'console_scripts': [
+            'django_datatable_demo = manage:main',
+        ],
+    },
     install_requires=[
         "django>=1.5",
         "supervisor",
