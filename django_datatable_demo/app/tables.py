@@ -59,7 +59,7 @@ class CalendarColumnTable(Table):
     calendar = CalendarColumn(field='calendar', start_date=date(2014, 4, 27), end_date=date(2014, 5, 9))
 
 
-image_url = 'https://cdn0.iconfinder.com/data/icons/users-android-l-lollipop-icon-pack/24/user-32.png'
+image_path = 'app/images/user.png'
 
 
 class LinkColumnTable(Table):
@@ -67,7 +67,7 @@ class LinkColumnTable(Table):
     name = LinkColumn(header='NAME', links=[
         Link(viewname='user_profile', args=(A('id'),), text=A('name'))])
     avatar = LinkColumn(header='AVATAR', links=[
-        ImageLink(viewname='user_profile', args=(A('id'),), image=image_url, image_title='avatar')])
+        ImageLink(viewname='user_profile', args=(A('id'),), image=image_path, image_title='avatar')])
     # logo = ImageColumn(field='logo.url', header='Logo Image', image_title='logo')
 
     class Meta:
