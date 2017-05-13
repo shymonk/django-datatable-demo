@@ -23,18 +23,18 @@ import app.views
 
 
 urlpatterns = [
-    url(r'^$', app.views.base, name='base'),
-    url(r'^datasource/ajax/$', app.views.ajax, name='ajax'),
-    url(r'^datasource/ajaxsource/$', app.views.ajax_source, name='ajax_source'),
-    url(r'^datasource/ajaxsource/api/$', app.views.MyDataView.as_view(), name='ajax_source_api'),
+    url(r'^django-datatable/datasource/model/$', app.views.base, name='base'),
+    url(r'^django-datatable/datasource/ajax/$', app.views.ajax, name='ajax'),
+    url(r'^django-datatable/datasource/ajaxsource/$', app.views.ajax_source, name='ajax_source'),
+    url(r'^django-datatable/datasource/ajaxsource/api/$', app.views.MyDataView.as_view(), name='ajax_source_api'),
 
-    url(r'^column/sequence/$', app.views.sequence_column, name='sequence_column'),
-    url(r'^column/calendar/$', app.views.calendar_column, name='calendar_column'),
-    url(r'^column/link/$', app.views.link_column, name='link_column'),
-    url(r'^column/checkbox/$', app.views.checkbox_column, name='checkbox_column'),
+    url(r'^django-datatable/column/sequence/$', app.views.sequence_column, name='sequence_column'),
+    url(r'^django-datatable/column/calendar/$', app.views.calendar_column, name='calendar_column'),
+    url(r'^django-datatable/column/link/$', app.views.link_column, name='link_column'),
+    url(r'^django-datatable/column/checkbox/$', app.views.checkbox_column, name='checkbox_column'),
 
-    url(r'^extensions/buttons/$', app.views.buttons_extension, name='buttons_extension'),
+    url(r'^django-datatable/extensions/buttons/$', app.views.buttons_extension, name='buttons_extension'),
 
-    url(r'^user/(\d+)/$', app.views.user_profile, name='user_profile'),
-    url(r'^table/', include('table.urls')),
+    url(r'^django-datatable/user/(\d+)/$', app.views.user_profile, name='user_profile'),
+    url(r'^django-datatable/table/', include('table.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
