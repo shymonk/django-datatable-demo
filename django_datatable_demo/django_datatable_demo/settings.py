@@ -6,7 +6,7 @@ import sys
 sys.path.append('..')
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 DEBUG = True
 TEMPLATE_DEBUG = False
