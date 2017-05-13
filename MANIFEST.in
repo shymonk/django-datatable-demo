@@ -1,0 +1,1 @@
+recursive-include django_datatable_demo *.sqllite3 *.html *.css *.js *.py
