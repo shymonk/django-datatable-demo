@@ -1,1 +1,1 @@
-recursive-include django_datatable_demo *.sqllite3 *.html *.css *.js *.py
+recursive-include django_datatable_demo *.sqllite3 *.html *.css *.js *.py *.png
